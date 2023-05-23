@@ -45,14 +45,6 @@ public class TelegramBot extends TelegramLongPollingBot {
                     }
                     sendMessage(chatId, curr);
                 }
-                case "/goRoll" -> {
-                    switch (update.getMessage().getFrom().getUserName()) {
-                        case ("NowaGen") -> curr = "Сегодня вечерком покрутим @dusshub @opeth_24?";
-                        case ("opeth_24") -> curr = "Сегодня вечерком покрутим @dusshub @NowaGen?";
-                        case ("dusshub") -> curr = "Сегодня вечерком покрутим @NowaGen @opeth_24?";
-                    }
-                    sendMessage(chatId,curr);
-                }
             }
         }
     }
