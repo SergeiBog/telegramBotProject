@@ -62,7 +62,7 @@ public class TelegramBot extends TelegramLongPollingBot {
         try {
             execute(sendMessage);
         } catch (TelegramApiException e) {
-
+            e.printStackTrace();
         }
     }
 }
